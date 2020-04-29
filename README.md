@@ -22,7 +22,7 @@
 <img src="https://user-images.githubusercontent.com/48937186/80507477-db51a880-89b1-11ea-9d1a-a6d93899ad2f.PNG" width="700">   
     * ARP Spoofing으로 인한 MITM   
 <img src="https://user-images.githubusercontent.com/48937186/80507499-e1478980-89b1-11ea-82f1-9f7e8aa060aa.PNG" width="700">    
-
+***
 ## 개발환경
 
 * OpenWrt 설치   
@@ -31,4 +31,12 @@
 ```
 https://openwrt.org/toh/xiaomi/mini
 ```
+
+## 진행사항
+* 모니터링 프로그램 
+    * 공유기에 접속하는 모든 디바이스의 IP Address, MAC Address, Host name, Connection Time, Continuos Time 정보를 실시간으로 보여주는 모니터링 프로그램 개발
+    * Connection Time은 디바이스가 공유기에 연결된 시간, Continuos Time은 공유기에 접속한 뒤, 접속을 유지하고 있는 시간을 나타냄
+    * Number of connected device는 접속중인 기기의 수를 나타냄
+    
+![image](https://user-images.githubusercontent.com/48937186/80550403-fac0f380-89fa-11ea-82a7-d03a9d0dd42f.png)
 
