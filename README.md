@@ -14,6 +14,7 @@
 ## 프로젝트 목표
 * 본 프로젝트에서는 공유기에 ARP Spoofing IDS(Instrusion Detection System)를 구축하여 ARP Spoofing 공격을 탐지하고자 함
 * 리눅스 기반의 OpenWrt 펌웨어를 공유기에 업로드한 후, 공유기에 접속하는 모든 디바이스의 정보를 실시간으로 모니터링하는 프로그램을 개발하고 공격자의 정보를 띄어주는 IDS를 개발함
+* 추가적으로 ARP Spoofing 공격과 VM(Virtual Machine) 연결을 구분하기 위한 알고리즘을 제시함
 * ARP Spoofing 공격 시나리오를 구성한 후, 실제 공격이 일어났을 때 IDS의 탐지 성공 여부에 대한 실험을 함
 * ARP Spoofing 공격 시나리오는 아래와 같음
     * 피해자 PC와 공유기 간의 정상적인 통신   
@@ -34,11 +35,21 @@
 https://openwrt.org/toh/xiaomi/mini
 ```
 
-## 진행사항
+## 프로젝트 결과
 * 모니터링 프로그램 
     * 공유기에 접속하는 모든 디바이스의 IP Address, MAC Address, Host name, Connection Time, Continuos Time 정보를 실시간으로 보여주는 모니터링 프로그램 개발
+    * Status는 현재 상태 표시를 나타내며 ARP Spoofing 발생시 피해자는 빨간색, 공격자는 파란색으로 정보를 보여줌
     * Connection Time은 디바이스가 공유기에 연결된 시간, Continuos Time은 공유기에 접속한 뒤, 접속을 유지하고 있는 시간을 나타냄
-    * Number of connected device는 접속중인 기기의 수를 나타냄
+    * Number of connected device는 접속중인 기기의 수를 나타냄    
+    ![image](https://user-images.githubusercontent.com/48937186/85250113-99fce700-b490-11ea-8b7f-702cbdca0071.png)
+
+    * VM 연결 시
+    ![image](https://user-images.githubusercontent.com/48937186/85250131-ad0fb700-b490-11ea-90bb-1e27c15312ce.png)
+
     
-![image](https://user-images.githubusercontent.com/48937186/80550403-fac0f380-89fa-11ea-82a7-d03a9d0dd42f.png)
+    * ARP Spoofing 공격 발생 시 
+    ![image](https://user-images.githubusercontent.com/48937186/85250159-c3b60e00-b490-11ea-9de1-e023f4c61f0d.png)
+
+
+
 
