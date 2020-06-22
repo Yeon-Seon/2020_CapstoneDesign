@@ -41,6 +41,8 @@ https://openwrt.org/toh/xiaomi/mini
     * Status는 현재 상태 표시를 나타내며 ARP Spoofing 발생시 피해자는 빨간색, 공격자는 파란색으로 정보를 보여줌
     * Connection Time은 디바이스가 공유기에 연결된 시간, Continuos Time은 공유기에 접속한 뒤, 접속을 유지하고 있는 시간을 나타냄
     * Number of connected device는 접속중인 기기의 수를 나타냄    
+    
+    * 정상 상황 시
     ![image](https://user-images.githubusercontent.com/48937186/85250113-99fce700-b490-11ea-8b7f-702cbdca0071.png)
 
     * VM 연결 시
